@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css\MyStyle.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <a class="navbar-brand" href="#home.html">
+                <img src="images\logo.jpeg" alt="books" width="50px" height="50px">
+                OnlineBooks</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error404.html">Bestsellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booklistpage.html">Book-List</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="authors-list.html">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publisher-list.html">Publishers</a>
+                    </li>
+                    <li>
+                        <form class="d-flex ml-2" role="search" action="searchresult.html">
+                            <input class="form-control me-2" type="search" placeholder="Search Here"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item dropdown ml-auto">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="userprofile.html">Profile</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 pt-5">
+        <h1>Search Results</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-3 mb-3 col-fixed">
+                <h4>Filters</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select class="form-control" id="category">
+                            <option>Fiction</option>
+                            <option>Non-Fiction</option>
+                            <option>Mystery</option>
+                            <option>Biography</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="priceRange">Price Range</label>
+                        <input type="text" class="form-control" id="priceRange" placeholder="e.g., Rs.100 - Rs.500">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </form>
+            </div>
+            <div class="col-md-9 col-scroll p-0">
+                <h2 class="h2-fix">Related Books</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card book-card">
+                            <img src="images\fiction2.jpeg" class="card-img-top card-img" alt="Book Title 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Hide & Seek</h5>
+
+                                <p class="card-text">Price: Rs. 349.00</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card book-card">
+                            <img src="images\fiction5.jpeg" class="card-img-top card-img" alt="Book Title 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Three World to Conquer</h5>
+                                <p class="card-text">Price: Rs. 1050.00</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card book-card">
+                            <img src="images\wingsoffire.jpg" class="card-img-top" alt="Book Title">
+                            <div class="card-body">
+                                <h5 class="card-title">Wings of fire</h5>
+                                <p class="card-text">Author: A.P.J. Abdul Kalam</p>
+                                <p class="card-text">Price: Rs.100.00</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card book-card">
+                            <img src="images\secret.jpg" class="card-img-top" alt="Book Title">
+                            <div class="card-body">
+                                <h5 class="card-title">The secret</h5>
+                                <p class="card-text">Author:Rhondy</p>
+                                <p class="card-text">Price: Rs.450.00</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card book-card">
+                            <img src="images\nonf3.jpeg" class="card-img-top card-img" alt="Mahaprasthanam">
+                            <div class="card-body">
+                                <h5 class="card-title">Zero to CEO</h5>
+
+                                <p class="card-text">Price: Rs. 150.00</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card book-card">
+                            <img src="images\fiction6.jpeg" class="card-img-top card-img" alt="Mahaprasthanam">
+                            <div class="card-body">
+                                <h5 class="card-title">Follow me to Ground</h5>
+                                <p class="card-text">Price: Rs. 1599.00</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="footer-logo mb-3">
+                <img src="images\logo.jpeg" alt="BookStore">
+            </div>
+            <div class="lnks">
+                <div class="a-lnk">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+
+                </div>
+                <div class="social-lnk">
+                    <a href="#"><i class="fa-brands fa-facebook"></i> facebook</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                </div>
+            </div>
+            <div class="footer-copyright mt-3 mb-5">
+                &copy; 2024 BookStore. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

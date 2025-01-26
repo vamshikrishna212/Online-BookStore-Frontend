@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Detail Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css\MyStyle.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <a class="navbar-brand" href="#home.html">
+                <img src="images\logo.jpeg" alt="books" width="50px" height="50px">
+                OnlineBooks</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error404.html">Bestsellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booklistpage.html">Book-List</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="authors-list.html">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publisher-list.html">Publishers</a>
+                    </li>
+                    <li>
+                        <form class="d-flex ml-2" role="search" action="searchresult.html">
+                            <input class="form-control me-2" type="search" placeholder="Search Here"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item dropdown ml-auto">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="userprofile.html">Profile</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images\mahaprasthanam.jpg" class="img-fluid" alt="Maha Prasthanam">
+            </div>
+            <div class="col-md-8">
+                <h1>Maha Prasthanam</h1>
+                <p><strong>Author:</strong> Sri Sri</p>
+                <p><strong>Price:</strong> Rs. 450</p>
+                <p><strong>Description:</strong> "Mahaprasthanam" by Sri Sri is a groundbreaking collection of modern
+                    Telugu poetry known for its innovative style and profound social critique. It broke away from
+                    traditional forms, addressing contemporary issues with a fresh, conversational tone.</p>
+                <a href="cartpage.html"><button class="btn btn-primary">Add to Cart</button></a>
+                <h3 class="mt-4">Reviews</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Review 1: must read !</li>
+                    <li class="list-group-item">Review 2: Very informative and best book ever .</li>
+                </ul>
+                <a href="reviewsubmissionpage.html"><button class="btn btn-primary mt-2">Submit Review</button></a>
+            </div>
+        </div>
+        <h3 class="mt-5">Similar Books</h3>
+        <div class="row">
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\kadgasrustisrisri.jpg" class="card-img-top" alt="kadgasrustisrisri">
+                    <div class="card-body">
+                        <h5 class="card-title">kadga shrusti</h5>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\siribook.jpg" class="card-img-top" alt="sirivennela">
+                    <div class="card-body">
+                        <h5 class="card-title">sirivennela</h5>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="footer-logo mb-3">
+                <img src="images\logo.jpeg" alt="BookStore">
+            </div>
+            <div class="lnks">
+                <div class="a-lnk">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+
+                </div>
+                <div class="social-lnk">
+                    <a href="#"><i class="fa-brands fa-facebook"></i> facebook</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                </div>
+            </div>
+            <div class="footer-copyright mt-3 mb-5">
+                &copy; 2024 BookStore. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.book-row {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.book-card {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 20px;
+    font-size: 0.8rem;
+}
+
+.book-card img {
+    height: 300px;
+    /* Set a fixed height for the images */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+.lnks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.a-lnk {
+    display: grid;
+    grid-row: auto;
+    grid-column: 1;
+
+}
+
+.a-lnk a {
+    color: black;
+}
+
+.social-lnk a {
+    color: black;
+}
+
+.social-lnk {
+    display: grid;
+    grid-row: auto;
+    grid-column: 1;
+
+}
+
+.disp-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.disp {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+
+}
+
+.disp h1 {
+    text-align: center;
+}
+
+.disp button {
+    align-content: center;
+}
+
+.cred a {
+    color: black;
+}
+
+.col-fixed {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    /* Ensure it can scroll if content exceeds viewport height */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.col-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px;
+    scrollbar-width: none;
+}
+
+.h2-fix {
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    background-color: white;
+    z-index: 1000;
+    /* Keeps the heading above other content */
+    margin-bottom: 10px;
+    /* Add space between heading and content */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+
+}

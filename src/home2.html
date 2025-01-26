@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+
+        var modal = document.getElementById('modal');
+
+        var btn = document.getElementById('openModal');
+
+        var span = document.getElementsByClassName('close')[0];
+
+        btn.onclick = function () {
+
+            modal.style.display = 'block';
+        }
+
+        span.onclick = function () {
+
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+
+            if (event.target == modal) { modal.style.display = 'none'; }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <button id="openModal">Open Modal</button>
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <p>Modal content</p>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- <main>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">​
+        <select name="dropdown-lst" id="dropdown-lst">
+
+            <option value="opt1">eggs</option>
+            <option value="opt2">chicken</option>
+            <option value="opt3">mutton</option>
+        </select>
+        <p title="tooltip">
+        <pre>
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both spaces and
+                line breaks
+                </pre>
+        helo hru if xsdcs cedw
+        dfcwdwec
+        ewc
+        Your
+
+        </p>
+        <textarea name="exs" id="red" rows="5" cols="10"></textarea>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v='Y1-5z-E2Qd0'" frameborder="0"
+            allowfullscreen></iframe>
+
+
+        <a href="mailto:k.vamshikrishna1794058@gmail.com">mail</a>
+
+
+        <ol type="A">
+            <li>rgtf</li>
+            <li>erffv</li>
+            <li>fvdbvcda</li>
+        </ol>
+
+
+
+        <map name="mapname">
+
+            <area shape="circle" coords="0,0,300,350" href="https://www.example.com">
+
+        </map>
+        <aside aria-keyshortcuts="aria-controls">
+            <ul>
+                <li>1st</li>
+                <li>1st</li>
+                <li>1st</li>
+                <li>1st</li>
+                <li>1st</li>
+                <li>1st</li>
+
+            </ul>
+        </aside>
+        <a href=""><img src="C:\Users\vamsh\Desktop\bootstrapappl\images\srisri.jpg"></a>
+
+        <img src="C:\Users\vamsh\Desktop\bootstrapappl\images\srisri.jpg" alt="Description"
+            style="width:100%; max-width:600px;">
+
+        <span title="Tooltip text">Hover over me</span>
+
+
+
+        <audio controls>
+
+            <source src="C:\Users\vamsh\Downloads\Telugammayi - SenSongsmp3.Co.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <audio controls src="C:\Users\vamsh\Downloads\Telugammayi - SenSongsmp3.Co.mp3"></audio>
+    </main>
+
+    <select name="options" multiple>
+
+        <option value="1">Option 1</option>
+
+        <option value="2">Option 2</option>
+        <option value="3">Option 2</option>
+        <option value="6">Option 2</option>
+        <option value="7">Option 2</option>
+
+    </select>
+
+
+    <kbd>Ctrl + C</kbd>
+
+
+
+    <p>Press <kbd>Ctrl2</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+    <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+
+
+    <input type="text" name="username" autocomplete="on">
+
+    <input type="color" name="favcolor">
+
+    <input type="week" name="query">
+    <input type="range" name="volume" min="0" max="100">
+
+    <input list="browsers" name="browser">
+
+    <datalist id="browsers">
+
+        <option value="Chrome">
+
+        <option value="Firefox">
+
+        <option value="Safari">
+
+    </datalist>
+
+    <samp>2+1</samp> -->
+</body>
+<!-- https://www.youtube.com/watch?v=Y1-5z-E2Qd0 -->
+
+</html>

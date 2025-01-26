@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css\MyStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <a class="navbar-brand" href="#home.html">
+                <img src="images\logo.jpeg" alt="books" width="50px" height="50px">
+                OnlineBooks</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error404.html">Bestsellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booklistpage.html">Book-List</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="authors-list.html">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publisher-list.html">Publishers</a>
+                    </li>
+                    <li>
+                        <form class="d-flex ml-2" role="search" action="searchresult.html">
+                            <input class="form-control me-2" type="search" placeholder="Search Here"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item dropdown ml-auto">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="userprofile.html">Profile</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5 pt-5">
+        <h1><b>Biggest Online BookHub</b></h1>
+        <hr>
+        <h3>Featured Books</h3>
+        <hr>
+        <div class="book-row">
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\wingsoffire.jpg" class="card-img-top card-img" alt="wings of fire">
+                    <div class="card-body">
+                        <h5 class="card-title">Wings of Fire</h5>
+                        <p class="card-text"><strong>Author:</strong> Dr. A.P.J. Abdul Kalam</p>
+                        <p class="card-text"><strong>Price:</strong> Rs. 450.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\siribook.jpg" class="card-img-top card-img" alt="Book Title 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pata Shikarukochindhi</h5>
+                        <p class="card-text">Author: Sirivennela Sitarama Satri</p>
+                        <p class="card-text">Price: Rs. 550.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\mahaprasthanam.jpg" class="card-img-top card-img" alt="Mahaprasthanam">
+                    <div class="card-body">
+                        <h5 class="card-title">Maha Prasthanam</h5>
+                        <p class="card-text">Author: Sri Sri</p>
+                        <p class="card-text">Price: Rs. 750.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\secret.jpg" class="card-img-top card-img" alt="wings of fire">
+                    <div class="card-body">
+                        <h5 class="card-title">The Secret</h5>
+                        <p class="card-text">Author: Rhoda</p>
+                        <p class="card-text">Price: Rs. 850.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\kadgasrustisrisri.jpg" class="card-img-top card-img" alt="Book Title 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Kadga Shrusti</h5>
+                        <p class="card-text">Author: Sri Sri</p>
+                        <p class="card-text">Price: Rs. 1050.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\youareunique.jpg" class="card-img-top card-img" alt="Mahaprasthanam">
+                    <div class="card-body">
+                        <h5 class="card-title">You are unique</h5>
+                        <p class="card-text">Author: Dr. A.P.J. Abdul Kalam</p>
+                        <p class="card-text">Price: Rs. 2050.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+        <h3>Fiction</h3>
+        <hr>
+        <div class="book-row">
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\fiction1.jpeg" class="card-img-top card-img" alt="wings of fire">
+                    <div class="card-body">
+                        <h5 class="card-title">The Outer Space</h5>
+                        <p class="card-text"><strong>Price:</strong> Rs. 750.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\fiction2.jpeg" class="card-img-top card-img" alt="Book Title 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Hide & Seek</h5>
+
+                        <p class="card-text">Price: Rs. 349.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\fiction3.jpeg" class="card-img-top card-img" alt="Mahaprasthanam">
+                    <div class="card-body">
+                        <h5 class="card-title">Spirit Demon</h5>
+                        <p class="card-text">Price: Rs. 499.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\fiction4.jpeg" class="card-img-top card-img" alt="wings of fire">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter</h5>
+
+                        <p class="card-text">Price: Rs. 849.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\fiction5.jpeg" class="card-img-top card-img" alt="Book Title 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Three World to Conquer</h5>
+                        <p class="card-text">Price: Rs. 1050.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\fiction6.jpeg" class="card-img-top card-img" alt="Mahaprasthanam">
+                    <div class="card-body">
+                        <h5 class="card-title">Follow me to Ground</h5>
+                        <p class="card-text">Price: Rs. 1599.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <hr>
+        <h3>Non - Fiction</h3>
+        <hr>
+        <div class="book-row">
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\nonf1.jpeg" class="card-img-top card-img" alt="wings of fire">
+                    <div class="card-body">
+                        <h5 class="card-title">Never Give Up</h5>
+
+                        <p class="card-text"><strong>Price:</strong> Rs. 1950.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\nonf2.jpeg" class="card-img-top card-img" alt="Book Title 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Iam Malala</h5>
+
+                        <p class="card-text">Price: Rs. 950.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\nonf3.jpeg" class="card-img-top card-img" alt="Mahaprasthanam">
+                    <div class="card-body">
+                        <h5 class="card-title">Zero to CEO</h5>
+
+                        <p class="card-text">Price: Rs. 150.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\nonf4.jpeg" class="card-img-top card-img" alt="wings of fire">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga Life</h5>
+
+                        <p class="card-text">Price: Rs. 1850.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\nonf5.jpeg" class="card-img-top card-img" alt="Book Title 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Lonely Road</h5>
+
+                        <p class="card-text">Price: Rs. 2950.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="card">
+                    <img src="images\nonf6.png" class="card-img-top card-img" alt="Mahaprasthanam">
+                    <div class="card-body">
+                        <h5 class="card-title">Give & Take</h5>
+
+                        <p class="card-text">Price: Rs. 599.00</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="footer-logo mb-3">
+                <img src="images\logo.jpeg" alt="BookStore">
+            </div>
+            <div class="lnks">
+                <div class="a-lnk">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+
+                </div>
+                <div class="social-lnk">
+                    <a href="#"><i class="fa-brands fa-facebook"></i> facebook</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                </div>
+            </div>
+            <div class="footer-copyright mt-3 mb-5">
+                &copy; 2024 BookStore. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
